@@ -1,4 +1,4 @@
-
+/* Pantalla de PC de Escritorio: a partir de 992px */
 * {
     margin: 0;
     padding: 0;
@@ -140,7 +140,7 @@ img {
 .bloque-imagen img {
     width: 100%;
     border-radius: 0px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .bloque-texto {
@@ -235,3 +235,21 @@ img {
     color: #ffffff;
     font-weight: 500;
 }
+
+
+/* Tablet: más pequeño de 992px */
+/* Debes tener en cuenta los estilos añadidos para PC anteriormente */
+@media screen and (max-width: 992px) {
+    .menu-navegacion {
+        display: none;
+    }
+    .bloque-mixto {
+        flex-direction: column;
+        padding: 80px 5%;
+    }
+}
+
+/* Móvil: más pequeño de 768px */
+/* Debes tener en cuenta los estilos añadidos anteriormente para PC
+ y también los que incluiste para Tablet anteriormente */
+@media screen and (max-width: 768px) {}
