@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #0b0c10;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(11, 12, 16, 0.85);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-superior {
+    max-height: 45px;
+    filter: invert(1);
+}
+
+.menu-navegacion a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #aaaaaa;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.menu-navegacion a:hover {
+    color: #ffffff;
+}
+
+.header-icos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono-cesta {
+    text-decoration: none;
+    filter: brightness(0) invert(1);
+}
+
+.menu-hamburguesa {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hero-section {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #12141c;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.hero-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1d29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.imagen-vacia-indicador {
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.hero-contenido h1 {
+    font-size: 54px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-contenido p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.bloque-mixto {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background-color: #0b0c10;
+}
+
+.bloque-imagen {
+    flex: 1;
+}
+
+.bloque-imagen img {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.bloque-texto {
+    flex: 1;
+}
+
+.bloque-texto h3 {
+    font-size: 28px;
+    line-height: 1.6;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.seccion-lanzamientos {
+    background-color: #0f111a;
+    padding: 80px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.contenedor-prendas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 10%;
+}
+
+.tarjeta-producto {
+    background-color: #161925;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.imagen-contenedor {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen-contenedor.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222639;
+}
+
+.placeholder-vacio {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tarjeta-info {
+    padding: 25px;
+    background-color: #161925;
+}
+
+.tarjeta-info span {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888888;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tarjeta-info h4 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+}
